@@ -10,18 +10,19 @@ let secpg = document.getElementById ("secpg")
 loginbtn.addEventListener( "click" , function () {
    if (phonenum.value =="01234" && pinnum.value == 1234) {
     successMsg.removeAttribute("hidden")
+   
      phonenum.value ="";
      pinnum.value="";
     secpg.removeAttribute("hidden");
     firstpg.setAttribute("hidden",true);
    } 
    else if(phonenum.value =="" && pinnum.value == ""){
-    alert ("Put Your Info.")
+    alert ("Put Your Info.");
    }
    else {
    errorMsg.removeAttribute("hidden");
    secpg.setAttribute("hidden" , true);
-   firstpg.removeAttribute("hidden")git init
+   firstpg.removeAttribute("hidden");
    }
 }) 
 let totalAmount = document.getElementById("totalAmount")
@@ -35,12 +36,15 @@ add.addEventListener( "click", function() {
   if (pinplus.value == 1234 && !isNaN(addAmounts)) {
    let finalamount = total + addAmounts;
    totalAmount.innerText = finalamount;
+   
   }
    else if(plus.value =="" && pinplus.value == ""){
     alert ("Put Your Info.")
+     
    }
   else{
    alert("Wrong pinNumber.")
+    
   }
 })
 
@@ -54,9 +58,11 @@ send.addEventListener( "click", function() {
   if (pinminus.value == 1234 && !isNaN(sendAmounts)) {
    let finalAmount = total - sendAmounts;
    totalAmount.innerText = finalAmount;
+   
   }
    else if(minus.value =="" && pinminus.value == ""){
     alert ("Put Your Info.")
+     
    }
   else{
    alert("Wrong pinNumber.")
