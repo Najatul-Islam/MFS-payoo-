@@ -21,7 +21,7 @@ loginbtn.addEventListener( "click" , function () {
    else {
    errorMsg.removeAttribute("hidden");
    secpg.setAttribute("hidden" , true);
-   firstpg.removeAttribute("hidden")
+   firstpg.removeAttribute("hidden")git init
    }
 }) 
 let totalAmount = document.getElementById("totalAmount")
