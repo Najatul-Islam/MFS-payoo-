@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFS</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+     <!-- phone html -->
+     <div id="loginpg" class="max-w-[1250px] text-center m-auto">
+      <div id="firstpg">
+         <div class="mockup-phone">
+  <div class="mockup-phone-camera"></div>
+  <div class="mockup-phone-display grid place-content-center bg-white text-black" style="background-color: white ; color: black;">
+    <div class="m-auto" >
+<div class="">
+    <img src="img/Group (2).png" class="m-auto" alt="Group (2).png">
+  </picture>
+</div>
+    </div>
+     <!-- login part start -->
+      <div class=" w-[400px] text-start" style="background-color:#F4F5F7; padding:35px; border-radius: 25px;">
+     <h2 style="font-size:20px; font-weight: bold; color: black; text-align: start; margin-bottom: 20px;">Mobile Number</h2>
+     <input id="phonenum" type="text" placeholder="Enter your number" class="rounded-[50px] text-start outline-0" style="padding: 15px 80px; background-color: #e7ecec; color: rgb(53, 53, 53); margin-bottom: 20px;">
+        <h2 style="font-size:20px; font-weight: bold; color: black; text-align: start; margin-bottom: 20px;">4-Pin Digit</h2>
+     <input id="pinnum" type="password" placeholder="Enter your 4-Pin" class="rounded-[50px] text-start outline-0" style="padding: 15px 80px; background-color: #e7ecec; color: rgb(53, 53, 53); margin-bottom: 15px; ">
+     <button id="loginbtn"  class="rounded-[50px] text-start outline-0 " style="padding: 15px 150px; background-color: #0874F2; color: white; font-size: 20px; font-weight: bolder;" > LogIn</button>
+      </div>
+   
+    <!-- toast start -->
+ <div class="toast toast-center">
+  <div class="alert alert-success" hidden  id="successMsg" >
+    <span>Login successful.</span>
+  </div>
+  <div class="alert" hidden style="background-color: red;"  id="errorMsg">
+    <span>Wrong Info.</span>
+  </div>
+</div>
+<!-- toast end -->
+ 
+   <!-- login part end -->
+
+
+  </div>
+</div>
+      </div>
+
+<!-- Dashboard start -->
+<div id="secpg"hidden>
+  <div class="mockup-phone">
+  <div class="mockup-phone-camera">
+  </div>
+  <div class="mockup-phone-display grid place-content-center bg-white text-black" style="background-color: white ; color: black;">
+    <div class="">
+      <img style="margin:auto;" src="img/Group (2).png" alt="Group (2).png" >
+      <h2 style="font-size:30px; font-weight: bold; color: black; text-align: center" id="totalAmount">50000</h2>
+      <p style="padding:10px 0 30px;font-size:20px; font-weight:500; color: rgb(52, 51, 51); text-align: center; ">Available Balance</p>
+    <h1 style="font-size:30px; font-weight: bold; color: black; margin:auto">Welcome to Payoo!</h1>
+   <div style="margin: 30px 0;">
+   <h3></h3>
+     <div class=" w-[50px] text-start" style="background-color:#F4F5F7; padding:10px; border-radius: 20px;margin-top:20px; margin-bottom: 10px;">
+      <h2 style="font-size:16px; font-weight: bold; color:black; text-align: start; margin-bottom:10px;" >Amount to Add</h2>
+     <input id="plus" type="text" placeholder="Enter your number" class="rounded-[50px] text-start outline-0" style="padding:5px 10px; background-color: #e7ecec; color: rgb(53, 53, 53); margin-bottom: 10px;">
+        <h2 style="font-size:16px; font-weight: bold; color: black; text-align: start; margin-bottom:10px;">4-Pin Digit</h2>
+     <input id="pinplus" type="password" placeholder="Enter your 4-Pin" class="rounded-[50px] text-start outline-0" style="padding:5px 10px; background-color: #e7ecec; color: rgb(53, 53, 53); margin-bottom: 10px; ">
+     <!-- <button id="add"  class="rounded-[50px] text-center outline-0 " style="display: block;  padding: 5px 30px; background-color: #0874F2; color: white; font-size: 16px; font-weight: bolder;" >Add Money</button> -->
+      </div>
+<h3></h3>
+<button class="btn btn-soft btn-info"  id="add">AddMoney</button>
+
+         <div class=" w-[50px] text-start" style="background-color:#F4F5F7; padding:10px; border-radius: 20px;margin-top:20px; margin-bottom: 10px;">
+      <h2 style="font-size:16px; font-weight: bold; color:black; text-align: start; margin-bottom:10px;" >Amount to Send</h2>
+     <input id="minus" type="text" placeholder="Enter your number" class="rounded-[50px] text-start outline-0" style="padding:5px 10px; background-color: #e7ecec; color: rgb(53, 53, 53); margin-bottom: 10px;">
+        <h2 style="font-size:16px; font-weight: bold; color: black; text-align: start; margin-bottom:10px;">4-Pin Digit</h2>
+     <input id="pinminus" type="password" placeholder="Enter your 4-Pin" class="rounded-[50px] text-start outline-0" style="padding:5px 10px; background-color: #e7ecec; color: rgb(53, 53, 53); margin-bottom: 10px; ">
+     <!-- <button id="send"  class="rounded-[50px] text-start outline-0 " style="display: block; padding: 5px 30px; background-color: #0874F2; color: white; font-size: 16px; font-weight: bolder;" >Send Money</button> -->
+      </div>
+
+      <button class="btn btn-soft" id="send">Send Money</button>
+   </div>
+  </div>
+</div>
+    </div>
+</div>
+ <!-- Dashboard end -->
+     </div>
+<!-- phone end -->
+
+ 
+
+    <script src="js/script.js"></script>
+</body>
+</html>
